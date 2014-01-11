@@ -61,11 +61,11 @@ We can now move on to the implementation. In our `viewDidLoad` method, we'll set
 Notification Handlers
 ---------------------
 
-Great, we've got everything set up. Our visual layout constraints pin the adjusting view to the topLayoutGuide, and the `bottomConstraint` pins the bottom of the view to the `bottomLayoutGuide` (which we'll soon adjust using the constant).
+Great, we've got everything set up. Our visual layout constraints pin the adjusting view to the `topLayoutGuide`, and the `bottomConstraint` pins the bottom of the view to the `bottomLayoutGuide` (which we'll soon adjust using the constant).
 
 Now it's time to set up our keyboard notification handlers.
 
-The UIKeyboardDidShowNotification sends a NSNotification with a `userInfo` dictionary containing a key that has the final CGRect of the keyboards position on the screen. We're going to take that rectangle,
+The `UIKeyboardDidShowNotification` sends a NSNotification with a `userInfo` dictionary containing a key that has the final `CGRect` of the keyboards position on the screen. We're going to take that rectangle,
 
 ```objc
 CGRect frame = [sender.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
