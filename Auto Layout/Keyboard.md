@@ -71,7 +71,7 @@ The UIKeyboardDidShowNotification sends a NSNotification with a userInfo value c
 CGRect frame = [sender.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
 ```
 
-convert it into the coordinate system of the current view,
+convert it into the coordinate system of the current view (we have to do this in the situation where the view's view controller is being presented modally, such as in a form sheet on the iPad),
 
 ```objc
 CGRect newFrame = [self.view convertRect:frame fromView:[[UIApplication sharedApplication] delegate].window];
