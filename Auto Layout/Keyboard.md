@@ -48,7 +48,7 @@ We can now move on to the implementation. In our `viewDidLoad` method, we'll set
     NSDictionary *views = @{@"view": self.adjustingView,
                             @"top": self.topLayoutGuide };
 
-    [self.view addConstraint:[NSLayoutConstraint constraintsWithVisualFormat:[top][view] options:0 metrics:nil views:views]];
+    [self.view addConstraint:[NSLayoutConstraint constraintsWithVisualFormat:@"[top][view]" options:0 metrics:nil views:views]];
 
     self.bottomConstraint = [NSLayoutConstraint constraintWithItem:self.adjustingView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.bottomLayoutGuide attribute:NSLayoutAttributeTop multiplier:1 constant:0];
     [self.view addConstraint:self.bottomConstraint];
