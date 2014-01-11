@@ -10,7 +10,7 @@ Setting Up
 
 The first thing to do is to define our containing view controller, the view, and the bottom constraint that we'll use to adjust its size.
 
-Here's [HeightAdjustingViewController.h](HeightAdjustingViewController.h). We don't need to expose any public properties, so this it's pretty bare.
+Here's [HeightAdjustingViewController.h](HeightAdjustingViewController.h). We don't need to expose any public properties, so it's pretty bare.
 
 ```objc
 @interface HeightAdjustingViewController : UIViewController
@@ -25,7 +25,7 @@ Now, in the class extension in our [implementation file](HeightAdjustingViewCont
 @property (nonatomic, strong) NSLayoutConstraint *bottomConstraint;
 ```
 
-We also define two methods to catch the keyboard hide and show notifications.
+We also define two methods to send the keyboard hide and show notifications to.
 
 ```objc
 - (void)keyboardDidHide:(NSNotification *)sender;
