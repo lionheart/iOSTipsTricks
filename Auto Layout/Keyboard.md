@@ -1,7 +1,7 @@
 Adjusting Height on Keyboard Appearance / Disappearance
 =======================================================
 
-I wanted to start this snippet compilation off with something that is fairly common, but lacks much in the way of resources online: how to resize a view when a keyboard appears using Auto Layout (there are a bunch of articles out there that manually adjust the view's frame).
+I wanted to start this snippet compilation off with something that is fairly common, but lacks much in the way of resources online: how to resize a view when a keyboard appears *using Auto Layout* (there are a bunch of code samples out there that manually adjust the view's frame). The method I outline below works universally on both iPhone *and* iPad, portrait and landscape, and is pretty darn simple.
 
 So, without further adieu, here we go.
 
