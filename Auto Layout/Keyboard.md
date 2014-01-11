@@ -65,7 +65,7 @@ Great, we've got everything set up. Our visual layout constraints pin the adjust
 
 Now it's time to set up our keyboard notification handlers.
 
-The `UIKeyboardDidShowNotification` sends a NSNotification with a `userInfo` dictionary containing a key that has the final `CGRect` of the keyboards position on the screen. We're going to take that rectangle,
+The `UIKeyboardDidShowNotification` sends an `NSNotification` with a `userInfo` dictionary containing a key that has the final `CGRect` of the keyboards position on the screen. We're going to take that rectangle,
 
 ```objc
 CGRect frame = [sender.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
